@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --inline --hot",
-    "dev": "node devServer.js",
+    "dev": "set PORT=6610 && node devServer.js",
     "build": "rm -rf dist && webpack --colors"
   },
   "license": "MIT",
@@ -12,11 +12,13 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-runtime": "^5.8.38",
     "css-loader": "^0.28.7",
     "express": "^4.16.2",
     "less-loader": "^4.0.5",
+    "open-browser-webpack-plugin": "0.0.5",
     "vue-hot-reload-api": "^2.2.4",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^13.5.0",
